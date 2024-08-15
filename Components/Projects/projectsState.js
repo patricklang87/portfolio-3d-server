@@ -1,0 +1,91 @@
+
+import capitol from '../../assets/models/capitol.glb';
+import coffeeBook from '../../assets/models/coffee_book.glb';
+import flags from '../../assets/models/flags.glb';
+import notepad from '../../assets/models/notepad.glb';
+import tictactoe from '../../assets/models/tictactoe.glb';
+import ufo from '../../assets/models/ufo.glb';
+import laptop from '../../assets/models/laptop.glb';
+import trafficCone from '../../assets/models/trafficcone2.glb';
+
+export const radius = 70;
+export const projects = [
+        {
+            title: 'LegisTracker',
+            modelPath: capitol,
+            code_url: 'https://github.com/patricklang87/congress_data',
+            deployment_url: 'https://legistracker.herokuapp.com/#/',
+            description: 'A fullstack webapp designed to help track the actions of federal legislators. I wrote it to practice the creation of individual user profiles and to experiment with Express.js, Passport.js, and MongoDB. Uses the ProPublica, Google Civics, and MapQuest API.',
+            technologies: ['JavaScript', 'HTML5', 'CSS3', 'React', 'Redux', 'React-Router', 'Axios', 'Node.js', 'NPM', 'Passport.js', 'Express.js', 'Mongoose.js', 'MongoDB', 'Dotenv', 'Bcrypt'],
+            screenshots: ['lt_login.JPG', 'lt_find_legislators.JPG', 'lt_bills_nav.JPG','lt_login_mobile.JPG', 'lt_bills_mobile.JPG', 'lt_legislators_mobile.JPG' ],
+            scale: 0.15,
+            height: 5
+        },
+                {
+            title: 'Learn Your Flags',
+            modelPath: flags,
+            code_url: 'https://github.com/patricklang87/flagflashcards',
+            deployment_url: 'https://learn-your-flags.herokuapp.com/#/',
+            description: 'A full stack webapp designed to help the user learn the flags of the countries of the world. Front end built in React-Redux. Uses JSON Web Tokens to enable users to individually track the flags they have memorized. Flag and country info provided via the restcountries.com API.',
+            technologies: ['JavaScript', 'HTML5', 'CSS3', 'React', 'Redux', 'React-Router', 'Axios', 'Express', 'JSON Web Token', 'Node.js', 'NPM'],
+            screenshots: ['lyf_home.JPG', 'lyf_flashcards.JPG', 'lyf_quiz.JPG', 'lyf_quiz_results.JPG'],
+            scale: 1.5,
+            height: 0
+        },
+        {
+            title: 'Nadja\'s Bookshop',
+            modelPath: coffeeBook,
+            code_url: 'https://github.com/patricklang87/nadjas-books',
+            deployment_url: 'https://patricklang87.github.io/nadjas-books/',
+            description: 'A frontend landing page for an imaginary coffeeshop & bookstore. Designed to experiment with CSS and responsive web design.',
+            technologies: ['JavaScript', 'HTML5', 'CSS3', 'React'],
+            screenshots: ['nbc_1.jpg', 'nbc_2.jpg', 'nbc_3.jpg', 'nbc_4.jpg'],
+            scale: 55,
+            height: 0
+        },
+        {
+            title: 'TicTacToe 3D',
+            modelPath: tictactoe,
+            code_url: 'https://github.com/patricklang87/tictactoe-3d-mp',
+            deployment_url: 'https://ttt-3d-mp.herokuapp.com',
+            description: 'A fullstack 3-Dimentional two-player tictactoe game. The 3-dimensionality was achieved in CSS and Vanilla JavaScript. Written to experiment with Express.JS and Socket.io.',
+            technologies: ['JavaScript', 'HTML5', 'CSS3', 'React', 'Redux', 'Node', 'NPM', 'Axios', 'Express', 'Socket.io', 'Mongoose', 'MongoDB', 'Heroku'],
+            screenshots: ['ttt_awaiting.JPG', 'ttt_gameplay_desktop.JPG', 'ttt_gameplay_mobile.JPG', 'ttt_completed_mobile.JPG'],
+            scale: 60,
+            height: 2
+        },
+        {
+            title: 'Meteor Jumper',
+            modelPath: ufo,
+            code_url: 'https://github.com/patricklang87/meteor_jumper',
+            deployment_url: 'https://patricklang87.github.io/meteor_jumper/',
+            description: 'Survive the asteroid field and devour the human astronaut. A one-player game written in vanilla JS written to experiment with the HTML DOM.',
+            technologies: ['JavaScript', 'HTML5', 'CSS3'],
+            screenshots: ['mj_startscreen.JPG', 'mj_gamestart.JPG', 'mj_gameplay.JPG', 'mj_victory.JPG'],
+            scale: 3,
+            height: 0
+        },
+        {
+            title: 'Lecturna Quizbuilder',
+            modelPath: notepad,
+            code_url: 'https://github.com/patricklang87/quizbuilder',
+            deployment_url: 'https://lecturna.herokuapp.com',
+            description: 'Please note: the basic functionality for this app exists, but it is my current project and is still being debugged. Write and take quizzes, saving data to a PostgreSQL database hosted on Heroku. I am also still optimizing the mobile layout for the app.',
+            technologies: ['JavaScript', 'HTML5', 'SASS', 'React', 'Redux', 'Axios', 'Express', 'PostgreSQL', 'Heroku'],
+            screenshots: ['lec_login.JPG', 'lec_quizlist.JPG', 'lec_quizupdate.JPG', 'lec_takequiz.JPG', 'lec_quizresults.JPG'],
+            scale: 60,
+            height: 0
+        },
+        {
+            title: '3D-Portfolio',
+            modelPath: laptop,
+            code_url: 'https://github.com/patricklang87/portfolio_3D',
+            deployment_url: 'https://langportfolio.herokuapp.com/',
+            description: 'The site you are currently visiting. Taken as an opportunity to experiment with Three.js and React Three Fiber, as well as to play around in Blender. Includes a small backend to enable an email contact form.',
+            technologies: ['JavaScript', 'HTML5', 'CSS3', 'React', 'React Three Fiber', 'Three.js', 'Nodemailer'],
+            screenshots: ['portfolio_projects.JPG', 'portfolio_projects_mobile.JPG'],
+            scale: 40,
+            height: 0.5
+        },
+    ];
+

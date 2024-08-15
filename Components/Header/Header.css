@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.scrollToTop {
+    width: auto;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-Index: 99;
+}
+
+.scrollToTop:hover {
+    color: hotpink;
+}
+
+header img {
+    height: 26px;
+    width: auto;
+}
+
+/* header a {
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(185, 185, 185)
+} */
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+nav li {
+    margin: 5px 10px;
+    text-align: right;
+    list-style: none;
+}
+
+li a {
+    font-size: 1.5em;
+}
+
+.externalLinks ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 480px) {
+    header {
+    }
+
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        
+        margin: 0 24px;
+        text-align: center;
+    }
+
+    li a {
+        font-size: 1em;
+    }
+
+  }

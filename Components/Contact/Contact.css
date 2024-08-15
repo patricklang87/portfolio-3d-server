@@ -1,0 +1,62 @@
+#contact {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.contactContent {
+    width: 95%;
+}
+
+.emailForm {
+    padding: 10px;
+    box-shadow: 3px 3px 7px rgb(219, 219, 219) ;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labelInputPair {
+    text-align: left;
+    width: 90%;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 0 10px 0
+}
+
+label {
+    font-size: small;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 480px) {
+
+    #contact {
+        height: 90vh;
+    }
+
+    .contactContent {
+        width: auto;
+    }
+
+    input, textarea {
+        width: 400px;
+    }
+
+    .labelInputPair {
+        width: auto;
+    }
+
+    .emailForm {
+        padding: 30px;
+    }
+  }
